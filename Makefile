@@ -1,8 +1,8 @@
 SPECS = spec/*.js 
 REPORTER = spec
 
-build: 
-	node-waf distclean configure build
+build:
+	node-gyp clean configure build
 
 test:
 	@NODE_ENV=$(NODE_ENV) ./node_modules/.bin/mocha \
