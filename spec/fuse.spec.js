@@ -6,7 +6,7 @@ describe('fuse_common.h', function() {
     });
 
     it('fuse_version', function(done) {
-        fuse.fuse_version.should.be.a('number');
+        fuse.fuse.fuse_version.should.be.a('number');
         done();
     });
 
